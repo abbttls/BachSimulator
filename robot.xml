@@ -87,7 +87,7 @@
 
       <flexcomp name = "flex_finger" pos="0.0498 -0.0722622 0.004" quat="0.707107 0 0 -0.707107" type="gmsh"
       rgba="0.45098 0.435294 0.435294 1" file="finger6.1_vol.msh">
-        <contact condim="3" solref="0.01 1" solimp=".95 .99 .0001" selfcollide="none" />
+        <contact condim="6" solref="0.01 1" solimp=".95 .99 .0001" selfcollide="none" />
         <edge damping="1" />
         <plugin plugin="mujoco.elasticity.solid">
           <config key="poisson" value="0.2" />
