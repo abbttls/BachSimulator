@@ -19,12 +19,20 @@
     <mesh name="finger_backbone" file="finger_backbone.stl" />
     <mesh name="fr12_h101" file="fr12_h101.stl" />
   </asset>
-  <option timestep=".001" />
+  
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" rgb1=".1 .2 .3"
+    rgb2=".2 .3 .4" width="300" height="300" mark="edge" markrgb=".2 .3 .4"/>
+    <material name="grid" texture="grid" texrepeat="2 2" texuniform="true"
+    reflectance=".2"/>
+  </asset>
+  <option solver="CG" tolerance="1e-6" timestep=".001" integrator="implicitfast"/>
 
   <extension>
     <plugin plugin="mujoco.elasticity.solid" />
   </extension>
   <worldbody>
+    <geom name="ground" type="plane" pos="0 0 -.5" size="2 2 .1" material="grid" solimp=".99 .99 .01" solref=".001 1"/>
     <geom pos="-0.00513595 -0.0213 -0.0100947" quat="0 0 -0.707107 -0.707107" type="mesh"
       rgba="1 0.756863 0.054902 1" mesh="m3_heat_set_insert" />
     <geom pos="0.00582815 0.0006 -0.0100947" quat="0 0 -0.707107 -0.707107" type="mesh"
@@ -86,9 +94,9 @@
         rgba="0.752941 0.752941 0.752941 1" mesh="tip_shoulder_screw" />
 
       <flexcomp name = "flex_finger" pos="0.0498 -0.0722622 0.004" quat="0.707107 0 0 -0.707107" type="gmsh"
-      rgba="0.45098 0.435294 0.435294 1" file="finger6.1_vol.msh">
+      rgba="0.45098 0.435294 0.435294 1" file="finger6.1_vol.msh" scale = ".001 .001 .001">
         <contact condim="6" solref="0.01 1" solimp=".95 .99 .0001" selfcollide="none" />
-        <edge damping="1" />
+        <edge damping="1" equality="true"/>
         <plugin plugin="mujoco.elasticity.solid">
           <config key="poisson" value="0.2" />
           <!--Units

@@ -1,0 +1,31 @@
+<mujoco>
+  <option solver="CG" tolerance="1e-6" timestep=".001" integrator="implicitfast" gravity="0 0 -9.81"/>
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" rgb1=".1 .2 .3"
+      rgb2=".2 .3 .4" width="300" height="300" mark="edge" markrgb=".2 .3 .4" />
+    <material name="grid" texture="grid" texrepeat="2 2" texuniform="true"
+      reflectance=".2" />
+  </asset>
+  <extension>
+    <plugin plugin="mujoco.elasticity.solid" />
+  </extension>
+  <worldbody>
+    <geom name="ground" type="plane" pos="0 0 -.5" size="2 2 .1" material="grid"
+      solimp=".99 .99 .01" solref=".001 1" />
+    <body name="jiggly" pos="0 0 1">
+      <freejoint/>
+      <inertial mass="3" diaginertia=".003 .003 .003" pos="0 0 0"/>
+      <flexcomp name="flex_finger" pos="0 0 0" quat="0.707107 0 0 -0.707107"
+        type="gmsh" rgba="0.45098 0.435294 0.435294 1" file="finger6.1_vol.msh" scale=".01 .01 .01">
+        <contact condim="6" solref="0.01 1" solimp=".95 .99 .0001" selfcollide="none" />
+        <edge damping="1" />
+        <plugin plugin="mujoco.elasticity.solid">
+          <config key="poisson" value="0.1" />
+          <!--Units
+         are in Pa (SI)-->
+          <config key="young" value="5e4" />
+        </plugin>
+      </flexcomp>
+    </body>
+  </worldbody>
+</mujoco>
