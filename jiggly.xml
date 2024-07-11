@@ -27,5 +27,11 @@
         </plugin>
       </flexcomp>
     </body>
+    
+    <body name="block" pos="0 0 10">
+      <freejoint/>
+      <geom type="box" size="0.1 0.1 0.1" rgba="0.2 0.3 0.8 1" />
+    </body>
+
   </worldbody>
 </mujoco>
