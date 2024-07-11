@@ -31,6 +31,7 @@
   </extension>
   <worldbody>
     <geom name="ground" type="plane" pos="0.0 0.0 -50.0" size="2 2 .1" material="grid" solimp=".99 .99 .01" solref=".001 1" />
+
     <geom pos="-0.513595 -2.13 -1.00947" quat="0 0 -0.707107 -0.707107" type="mesh" rgba="1 0.756863 0.054902 1" mesh="m3_heat_set_insert" />
     <geom pos="0.582815 0.06 -1.00947" quat="0 0 -0.707107 -0.707107" type="mesh" rgba="0.45098 0.435294 0.435294 1" mesh="ur5_adaptor" />
     <geom pos="-2.70718 -6.5194 -1.00947" quat="0 0.707107 0 -0.707107" type="mesh" rgba="0.498039 0.498039 0.498039 1" mesh="ur5_arm_adapter" />
