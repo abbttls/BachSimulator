@@ -1,0 +1,264 @@
+<?xml version="1.0" ?>
+<mujoco>
+  <worldbody>
+    <body name="falling_ball" pos="70 70 300">
+      <geom density="500" rgba="0.2 0.2 0.8 1" size="30" type="sphere"/>
+      <joint name="ball_joint" type="free"/>
+    </body>
+    <body name="base_box" pos="60 4.77 60.877">
+      <geom density="1" rgba="0.6 0.6 0.6 1" size="60 4.77 60.877" type="box"/>
+      <body euler="-15.642 0 0" name="small_box_1" pos="0 5.6 60">
+        <geom rgba="0.8 0.3 0.3 1" size="60 0.6 1" type="box"/>
+        <joint axis="1 0 0" damping="50000" name="joint_0" pos="0 0 0" range="-90 90" springref="0" stiffness="50000" type="hinge"/>
+        <body name="blockl_0" pos="0 14 0">
+          <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+          <site name="sitel_0" pos="0 0 0" size="0.1"/>
+          <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_0" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+          <body name="blockl_1" pos="0 14 0">
+            <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+            <site name="sitel_1" pos="0 0 0" size="0.1"/>
+            <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_1" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+            <body name="blockl_2" pos="0 14 0">
+              <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+              <site name="sitel_2" pos="0 0 0" size="0.1"/>
+              <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_2" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+              <body euler="15.642 0 0" name="lbox_2" pos="0 0 -27.7">
+                <geom density="5000" rgba="0.8 0.3 0.3 1" size="60 1 21.7" type="box"/>
+                <joint axis="1 0 0" damping="50000" name="joint_2" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+              </body>
+              <body name="blockl_3" pos="0 14 0">
+                <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                <site name="sitel_3" pos="0 0 0" size="0.1"/>
+                <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_3" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                <body name="blockl_4" pos="0 14 0">
+                  <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                  <site name="sitel_4" pos="0 0 0" size="0.1"/>
+                  <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_4" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                  <body euler="15.642 0 0" name="lbox_4" pos="0 0 -23.7">
+                    <geom density="5000" rgba="0.8 0.3 0.3 1" size="60 1 17.7" type="box"/>
+                    <joint axis="1 0 0" damping="50000" name="joint_4" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                  </body>
+                  <body name="blockl_5" pos="0 14 0">
+                    <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                    <site name="sitel_5" pos="0 0 0" size="0.1"/>
+                    <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_5" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                    <body name="blockl_6" pos="0 14 0">
+                      <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                      <site name="sitel_6" pos="0 0 0" size="0.1"/>
+                      <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_6" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                      <body euler="15.642 0 0" name="lbox_6" pos="0 0 -20">
+                        <geom density="5000" rgba="0.8 0.3 0.3 1" size="60 1 14" type="box"/>
+                        <joint axis="1 0 0" damping="50000" name="joint_6" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                      </body>
+                      <body name="blockl_7" pos="0 14 0">
+                        <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                        <site name="sitel_7" pos="0 0 0" size="0.1"/>
+                        <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_7" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                        <body name="blockl_8" pos="0 14 0">
+                          <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                          <site name="sitel_8" pos="0 0 0" size="0.1"/>
+                          <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_8" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                          <body euler="15.642 0 0" name="lbox_8" pos="0 0 -16">
+                            <geom density="5000" rgba="0.8 0.3 0.3 1" size="60 1 10" type="box"/>
+                            <joint axis="1 0 0" damping="50000" name="joint_8" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                          </body>
+                          <body name="blockl_9" pos="0 14 0">
+                            <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                            <site name="sitel_9" pos="0 0 0" size="0.1"/>
+                            <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_9" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                            <body name="blockl_10" pos="0 14 0">
+                              <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                              <site name="sitel_10" pos="0 0 0" size="0.1"/>
+                              <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_10" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                              <body euler="15.642 0 0" name="lbox_10" pos="0 0 -12.3">
+                                <geom density="5000" rgba="0.8 0.3 0.3 1" size="60 1 6.3" type="box"/>
+                                <joint axis="1 0 0" damping="50000" name="joint_10" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                              </body>
+                              <body name="blockl_11" pos="0 14 0">
+                                <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                                <site name="sitel_11" pos="0 0 0" size="0.1"/>
+                                <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_11" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                                <body name="blockl_12" pos="0 14 0">
+                                  <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                                  <site name="sitel_12" pos="0 0 0" size="0.1"/>
+                                  <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointl_12" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                                  <body euler="15.642 0 0" name="lbox_12" pos="0 0 -8.5">
+                                    <geom density="5000" rgba="0.8 0.3 0.3 1" size="60 1 2.5" type="box"/>
+                                    <joint axis="1 0 0" damping="50000" name="joint_12" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body euler="15.642 0 0" name="small_box_2" pos="0 5.6 -60">
+        <geom rgba="0.3 0.8 0.3 1" size="60 0.6 1" type="box"/>
+        <joint axis="1 0 0" damping="50000" name="joint_1" pos="0 0 0" range="-90 90" springref="0" stiffness="50000" type="hinge"/>
+        <body name="blockr_0" pos="0 14 0">
+          <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+          <site name="siter_0" pos="0 0 0" size="0.1"/>
+          <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_0" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+          <body name="blockr_1" pos="0 14 0">
+            <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+            <site name="siter_1" pos="0 0 0" size="0.1"/>
+            <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_1" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+            <body name="blockr_2" pos="0 14 0">
+              <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+              <site name="siter_2" pos="0 0 0" size="0.1"/>
+              <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_2" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+              <body euler="-15.642 0 0" name="rbox_3" pos="0 0 27.7">
+                <geom density="5000" rgba="0.3 0.8 0.3 1" size="60 1 21.7" type="box"/>
+                <joint axis="1 0 0" damping="50000" name="joint_3" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+              </body>
+              <body name="blockr_3" pos="0 14 0">
+                <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                <site name="siter_3" pos="0 0 0" size="0.1"/>
+                <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_3" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                <body name="blockr_4" pos="0 14 0">
+                  <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                  <site name="siter_4" pos="0 0 0" size="0.1"/>
+                  <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_4" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                  <body euler="-15.642 0 0" name="rbox_5" pos="0 0 23.7">
+                    <geom density="5000" rgba="0.3 0.8 0.3 1" size="60 1 17.7" type="box"/>
+                    <joint axis="1 0 0" damping="50000" name="joint_5" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                  </body>
+                  <body name="blockr_5" pos="0 14 0">
+                    <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                    <site name="siter_5" pos="0 0 0" size="0.1"/>
+                    <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_5" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                    <body name="blockr_6" pos="0 14 0">
+                      <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                      <site name="siter_6" pos="0 0 0" size="0.1"/>
+                      <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_6" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                      <body euler="-15.642 0 0" name="rbox_7" pos="0 0 20">
+                        <geom density="5000" rgba="0.3 0.8 0.3 1" size="60 1 14" type="box"/>
+                        <joint axis="1 0 0" damping="50000" name="joint_7" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                      </body>
+                      <body name="blockr_7" pos="0 14 0">
+                        <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                        <site name="siter_7" pos="0 0 0" size="0.1"/>
+                        <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_7" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                        <body name="blockr_8" pos="0 14 0">
+                          <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                          <site name="siter_8" pos="0 0 0" size="0.1"/>
+                          <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_8" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                          <body euler="-15.642 0 0" name="rbox_9" pos="0 0 16">
+                            <geom density="5000" rgba="0.3 0.8 0.3 1" size="60 1 10" type="box"/>
+                            <joint axis="1 0 0" damping="50000" name="joint_9" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                          </body>
+                          <body name="blockr_9" pos="0 14 0">
+                            <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                            <site name="siter_9" pos="0 0 0" size="0.1"/>
+                            <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_9" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                            <body name="blockr_10" pos="0 14 0">
+                              <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                              <site name="siter_10" pos="0 0 0" size="0.1"/>
+                              <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_10" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                              <body euler="-15.642 0 0" name="rbox_11" pos="0 0 12.3">
+                                <geom density="5000" rgba="0.3 0.8 0.3 1" size="60 1 6.3" type="box"/>
+                                <joint axis="1 0 0" damping="50000" name="joint_11" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                              </body>
+                              <body name="blockr_11" pos="0 14 0">
+                                <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                                <site name="siter_11" pos="0 0 0" size="0.1"/>
+                                <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_11" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                                <body name="blockr_12" pos="0 14 0">
+                                  <geom density="5000" rgba="0.8 0.2 0.2 1" size="60 4 1" type="box"/>
+                                  <site name="siter_12" pos="0 0 0" size="0.1"/>
+                                  <joint actuatorfrclimited="false" axis="1 0 0" damping="50000" name="jointr_12" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                                  <body euler="-15.642 0 0" name="rbox_13" pos="0 0 8.5">
+                                    <geom density="5000" rgba="0.3 0.8 0.3 1" size="60 1 2.5" type="box"/>
+                                    <joint axis="1 0 0" damping="50000" name="joint_13" pos="0 0 0" range="-180 180" springref="0" stiffness="50000" type="hinge"/>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <option integrator="implicitfast"/>
+  <equality>
+    <weld active="true" body1="lbox_2" body2="rbox_3" solimp="0.9 0.95 0.001" solref="0.02 1"/>
+  </equality>
+  <equality>
+    <weld active="true" body1="lbox_4" body2="rbox_5" solimp="0.9 0.95 0.001" solref="0.02 1"/>
+  </equality>
+  <equality>
+    <weld active="true" body1="lbox_6" body2="rbox_7" solimp="0.9 0.95 0.001" solref="0.02 1"/>
+  </equality>
+  <equality>
+    <weld active="true" body1="lbox_8" body2="rbox_9" solimp="0.9 0.95 0.001" solref="0.02 1"/>
+  </equality>
+  <equality>
+    <weld active="true" body1="lbox_10" body2="rbox_11" solimp="0.9 0.95 0.001" solref="0.02 1"/>
+  </equality>
+  <equality>
+    <weld active="true" body1="lbox_12" body2="rbox_13" solimp="0.9 0.95 0.001" solref="0.02 1"/>
+  </equality>
+  <actuator>
+    <position ctrlrange="-1 1" gear="100" joint="joint_0" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_1" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_2" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_3" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_4" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_5" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_6" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_7" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_8" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_9" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_10" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_11" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_12" kp="9999999" kv="4000"/>
+    <position ctrlrange="-1 1" gear="100" joint="joint_13" kp="9999999" kv="4000"/>
+  </actuator>
+  <tendon>
+    <spatial damping="20" name="tendon_finger_right" stiffness="3000"/>
+    <spatial damping="20" name="tendon_finger_left" stiffness="3000">
+      <site name="sitel_0"/>
+      <site name="sitel_1"/>
+      <site name="sitel_2"/>
+      <site name="sitel_3"/>
+      <site name="sitel_4"/>
+      <site name="sitel_5"/>
+      <site name="sitel_6"/>
+      <site name="sitel_7"/>
+      <site name="sitel_8"/>
+      <site name="sitel_9"/>
+      <site name="sitel_10"/>
+      <site name="sitel_11"/>
+      <site name="sitel_12"/>
+      <site name="siter_0"/>
+      <site name="siter_1"/>
+      <site name="siter_2"/>
+      <site name="siter_3"/>
+      <site name="siter_4"/>
+      <site name="siter_5"/>
+      <site name="siter_6"/>
+      <site name="siter_7"/>
+      <site name="siter_8"/>
+      <site name="siter_9"/>
+      <site name="siter_10"/>
+      <site name="siter_11"/>
+      <site name="siter_12"/>
+    </spatial>
+  </tendon>
+</mujoco>

@@ -1,0 +1,420 @@
+<?xml version="1.0" ?>
+<mujoco>
+  <worldbody>
+    <body name="base_box" pos="60 4.77 60.877">
+      <geom type="box" size="60 4.7 60" rgba="0.6 0.6 0.6 1" density="1"/>
+      <body name="small_box_1" pos="0 6 60" euler="-16 0 0">
+        <geom type="box" size="60 1 1" rgba="0.8 0.3 0.3 1"/>
+        <joint type="hinge" name="joint_0" axis="1 0 0" pos="0 0 0" range="-90 90" stiffness="50000" damping="0" springref="0"/>
+        <body name="block_2" pos="0 5 0">
+          <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+          <joint type="hinge" name="joint_2" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+          <body name="block_3" pos="0 5 0">
+            <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+            <joint type="hinge" name="joint_3" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+            <body name="block_4" pos="0 5 0">
+              <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+              <joint type="hinge" name="joint_4" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+              <body name="block_5" pos="0 5 0">
+                <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                <joint type="hinge" name="joint_5" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                <body name="block_6" pos="0 5 0">
+                  <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                  <joint type="hinge" name="joint_6" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                  <body name="block_7" pos="0 5 0">
+                    <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                    <joint type="hinge" name="joint_7" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                    <body name="block_8" pos="0 5 0">
+                      <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                      <joint type="hinge" name="joint_8" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                      <body name="block_9" pos="0 5 0">
+                        <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                        <joint type="hinge" name="joint_9" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                        <body name="block_10" pos="0 5 0">
+                          <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                          <joint type="hinge" name="joint_10" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                          <body name="block_11" pos="0 5 0">
+                            <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                            <joint type="hinge" name="joint_11" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                            <body name="block_12" pos="0 5 0">
+                              <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                              <joint type="hinge" name="joint_12" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                              <body name="block_13" pos="0 5 0">
+                                <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                <joint type="hinge" name="joint_13" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                <body name="block_14" pos="0 5 0">
+                                  <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                  <joint type="hinge" name="joint_14" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                  <body name="block_15" pos="0 5 0">
+                                    <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                    <joint type="hinge" name="joint_15" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                    <body name="block_16" pos="0 5 0">
+                                      <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                      <joint type="hinge" name="joint_16" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                      <body name="block_17" pos="0 5 0">
+                                        <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                        <joint type="hinge" name="joint_17" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                        <body name="block_18" pos="0 5 0">
+                                          <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                          <joint type="hinge" name="joint_18" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                          <body name="block_19" pos="0 5 0">
+                                            <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                            <joint type="hinge" name="joint_19" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                            <body name="block_20" pos="0 5 0">
+                                              <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                              <joint type="hinge" name="joint_20" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                              <body name="block_21" pos="0 5 0">
+                                                <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                <joint type="hinge" name="joint_21" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                <body name="block_22" pos="0 5 0">
+                                                  <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                  <joint type="hinge" name="joint_22" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                  <body name="block_23" pos="0 5 0">
+                                                    <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                    <joint type="hinge" name="joint_23" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                    <body name="block_24" pos="0 5 0">
+                                                      <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                      <joint type="hinge" name="joint_24" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                      <body name="block_25" pos="0 5 0">
+                                                        <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                        <joint type="hinge" name="joint_25" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                        <body name="block_26" pos="0 5 0">
+                                                          <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                          <joint type="hinge" name="joint_26" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                          <body name="block_27" pos="0 5 0">
+                                                            <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                            <joint type="hinge" name="joint_27" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                            <body name="block_28" pos="0 5 0">
+                                                              <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                              <joint type="hinge" name="joint_28" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                              <body name="block_29" pos="0 5 0">
+                                                                <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                <joint type="hinge" name="joint_29" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                <body name="block_30" pos="0 5 0">
+                                                                  <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                  <joint type="hinge" name="joint_30" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                  <body name="block_31" pos="0 5 0">
+                                                                    <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                    <joint type="hinge" name="joint_31" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                    <body name="block_32" pos="0 5 0">
+                                                                      <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                      <joint type="hinge" name="joint_32" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                      <body name="block_33" pos="0 5 0">
+                                                                        <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                        <joint type="hinge" name="joint_33" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                        <body name="block_34" pos="0 5 0">
+                                                                          <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                          <joint type="hinge" name="joint_34" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                          <body name="block_35" pos="0 5 0">
+                                                                            <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                            <joint type="hinge" name="joint_35" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                            <body name="block_36" pos="0 5 0">
+                                                                              <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                              <joint type="hinge" name="joint_36" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                              <body name="block_37" pos="0 5 0">
+                                                                                <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                                <joint type="hinge" name="joint_37" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                                <body name="block_38" pos="0 5 0">
+                                                                                  <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                                  <joint type="hinge" name="joint_38" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                                  <body name="block_39" pos="0 5 0">
+                                                                                    <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                                    <joint type="hinge" name="joint_39" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                                    <body name="block_40" pos="0 5 0">
+                                                                                      <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                                      <joint type="hinge" name="joint_40" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                                      <body name="block_41" pos="0 5 0">
+                                                                                        <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                                        <joint type="hinge" name="joint_41" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                                      </body>
+                                                                                    </body>
+                                                                                  </body>
+                                                                                </body>
+                                                                              </body>
+                                                                            </body>
+                                                                          </body>
+                                                                        </body>
+                                                                      </body>
+                                                                    </body>
+                                                                  </body>
+                                                                </body>
+                                                              </body>
+                                                            </body>
+                                                          </body>
+                                                        </body>
+                                                      </body>
+                                                    </body>
+                                                  </body>
+                                                </body>
+                                              </body>
+                                            </body>
+                                          </body>
+                                        </body>
+                                      </body>
+                                    </body>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="small_box_2" pos="0 6 -60" euler="16 0 0">
+        <geom type="box" size="60 1 1" rgba="0.3 0.8 0.3 1"/>
+        <joint type="hinge" name="joint_1" axis="1 0 0" pos="0 0 0" range="-90 90" stiffness="50000" damping="0" springref="0"/>
+        <body name="block_42" pos="0 5 0">
+          <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+          <joint type="hinge" name="joint_42" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+          <body name="block_43" pos="0 5 0">
+            <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+            <joint type="hinge" name="joint_43" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+            <body name="block_44" pos="0 5 0">
+              <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+              <joint type="hinge" name="joint_44" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+              <body name="block_45" pos="0 5 0">
+                <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                <joint type="hinge" name="joint_45" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                <body name="block_46" pos="0 5 0">
+                  <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                  <joint type="hinge" name="joint_46" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                  <body name="block_47" pos="0 5 0">
+                    <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                    <joint type="hinge" name="joint_47" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                    <body name="block_48" pos="0 5 0">
+                      <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                      <joint type="hinge" name="joint_48" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                      <body name="block_49" pos="0 5 0">
+                        <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                        <joint type="hinge" name="joint_49" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                        <body name="block_50" pos="0 5 0">
+                          <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                          <joint type="hinge" name="joint_50" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                          <body name="block_51" pos="0 5 0">
+                            <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                            <joint type="hinge" name="joint_51" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                            <body name="block_52" pos="0 5 0">
+                              <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                              <joint type="hinge" name="joint_52" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                              <body name="block_53" pos="0 5 0">
+                                <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                <joint type="hinge" name="joint_53" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                <body name="block_54" pos="0 5 0">
+                                  <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                  <joint type="hinge" name="joint_54" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                  <body name="block_55" pos="0 5 0">
+                                    <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                    <joint type="hinge" name="joint_55" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                    <body name="block_56" pos="0 5 0">
+                                      <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                      <joint type="hinge" name="joint_56" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                      <body name="block_57" pos="0 5 0">
+                                        <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                        <joint type="hinge" name="joint_57" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                        <body name="block_58" pos="0 5 0">
+                                          <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                          <joint type="hinge" name="joint_58" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                          <body name="block_59" pos="0 5 0">
+                                            <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                            <joint type="hinge" name="joint_59" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                            <body name="block_60" pos="0 5 0">
+                                              <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                              <joint type="hinge" name="joint_60" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                              <body name="block_61" pos="0 5 0">
+                                                <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                <joint type="hinge" name="joint_61" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                <body name="block_62" pos="0 5 0">
+                                                  <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                  <joint type="hinge" name="joint_62" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                  <body name="block_63" pos="0 5 0">
+                                                    <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                    <joint type="hinge" name="joint_63" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                    <body name="block_64" pos="0 5 0">
+                                                      <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                      <joint type="hinge" name="joint_64" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                      <body name="block_65" pos="0 5 0">
+                                                        <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                        <joint type="hinge" name="joint_65" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                        <body name="block_66" pos="0 5 0">
+                                                          <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                          <joint type="hinge" name="joint_66" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                          <body name="block_67" pos="0 5 0">
+                                                            <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                            <joint type="hinge" name="joint_67" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                            <body name="block_68" pos="0 5 0">
+                                                              <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                              <joint type="hinge" name="joint_68" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                              <body name="block_69" pos="0 5 0">
+                                                                <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                <joint type="hinge" name="joint_69" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                <body name="block_70" pos="0 5 0">
+                                                                  <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                  <joint type="hinge" name="joint_70" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                  <body name="block_71" pos="0 5 0">
+                                                                    <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                    <joint type="hinge" name="joint_71" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                    <body name="block_72" pos="0 5 0">
+                                                                      <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                      <joint type="hinge" name="joint_72" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                      <body name="block_73" pos="0 5 0">
+                                                                        <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                        <joint type="hinge" name="joint_73" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                        <body name="block_74" pos="0 5 0">
+                                                                          <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                          <joint type="hinge" name="joint_74" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                          <body name="block_75" pos="0 5 0">
+                                                                            <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                            <joint type="hinge" name="joint_75" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                            <body name="block_76" pos="0 5 0">
+                                                                              <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                              <joint type="hinge" name="joint_76" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                              <body name="block_77" pos="0 5 0">
+                                                                                <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                                <joint type="hinge" name="joint_77" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                                <body name="block_78" pos="0 5 0">
+                                                                                  <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                                  <joint type="hinge" name="joint_78" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                                  <body name="block_79" pos="0 5 0">
+                                                                                    <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                                    <joint type="hinge" name="joint_79" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                                    <body name="block_80" pos="0 5 0">
+                                                                                      <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                                      <joint type="hinge" name="joint_80" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                                      <body name="block_81" pos="0 5 0">
+                                                                                        <geom type="box" size="60 2 1" rgba="0.8 0.2 0.2 1" density="1000"/>
+                                                                                        <joint type="hinge" name="joint_81" axis="1 0 0" range="-90 90" pos="0 0 0" stiffness="50000" damping="0" springref="0" actuatorfrclimited="false"/>
+                                                                                      </body>
+                                                                                    </body>
+                                                                                  </body>
+                                                                                </body>
+                                                                              </body>
+                                                                            </body>
+                                                                          </body>
+                                                                        </body>
+                                                                      </body>
+                                                                    </body>
+                                                                  </body>
+                                                                </body>
+                                                              </body>
+                                                            </body>
+                                                          </body>
+                                                        </body>
+                                                      </body>
+                                                    </body>
+                                                  </body>
+                                                </body>
+                                              </body>
+                                            </body>
+                                          </body>
+                                        </body>
+                                      </body>
+                                    </body>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position joint="joint_0" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_1" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_2" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_3" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_4" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_5" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_6" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_7" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_8" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_9" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_10" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_11" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_12" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_13" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_14" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_15" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_16" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_17" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_18" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_19" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_20" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_21" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_22" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_23" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_24" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_25" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_26" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_27" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_28" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_29" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_30" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_31" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_32" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_33" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_34" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_35" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_36" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_37" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_38" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_39" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_40" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_41" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_42" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_43" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_44" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_45" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_46" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_47" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_48" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_49" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_50" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_51" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_52" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_53" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_54" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_55" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_56" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_57" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_58" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_59" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_60" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_61" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_62" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_63" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_64" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_65" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_66" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_67" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_68" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_69" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_70" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_71" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_72" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_73" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_74" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_75" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_76" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_77" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_78" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_79" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_80" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+    <position joint="joint_81" ctrlrange="-1 1" gear="100" kp="99999999" kv="2000"/>
+  </actuator>
+</mujoco>
