@@ -17,7 +17,7 @@ The efforts to obtain a stable simulation using GMSH and the flexcomp element we
 ### Success
 More recent efforts have involved building the finger's fin ray structure from scratch, using MuJoCo's built-in block geometries, joints, and actuators for spring-damper feedback. finger_gen.py builds an xml tree to this end that is tunable with custom parameters. The results are so far more promising than those of previous methods, and the fin ray finger's behavior is manipulated more easily. However, the equality contraints required to enforce kinematic loops are hard to tune, and some components move in unpredictable ways.
 
-![Ball Compressing on Fin Ray Finger](Toward Flexible Finger/ball_pressure.png)
+<img src="Toward Flexible Finger/ball_pressure.png" height=200>
 
 Fin ray structures can indeed be modelled more analytically: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2020.590076/full. In the future, it may be worth leveraging derived polynomial relationships between the fin ray finger's joints to avoid computing real-time behavior innacurrately at a low level.
 
